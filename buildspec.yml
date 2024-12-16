@@ -1,6 +1,13 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 18 # Use an appropriate version for your Angular project
+    commands:
+      - echo "Installing Node.js dependencies..."
+      - npm install -g @angular/cli # Ensure Angular CLI is globally available
+      - npm ci # Clean install dependencies from package-lock.json
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
