@@ -18,7 +18,6 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - chmod +x npm  # Ensure gradlew has execute permissions
       - npm run build  # Run npm build
       - echo Building the Docker image...
       - docker build -t shms-frontend .
