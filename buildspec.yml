@@ -21,7 +21,7 @@ phases:
       - npm run build  # Run npm build
       - echo Building the Docker image...
       - docker build -t shms-frontend .
-      - docker tag shms-service olexiybondar9685/shms-frontend
+      - docker tag shms-frontend olexiybondar9685/shms-frontend
   post_build:
     commands:
       - echo Build completed on `date`
