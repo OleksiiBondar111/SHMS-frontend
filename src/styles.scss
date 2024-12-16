@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//.section-title {
+//  color: #2ddf5c;
+//  text-align: center;
+//}
+//
+//.button {
+//  color: white;
+//  background: #0e4f1f;
+//  padding: 0.5rem;
+//  border-radius: 0.5rem;
+//  font: inherit;
+//  font-weight: bold;
+//}
+//
+//.button[disabled] {
+//  cursor: not-allowed;
+//  border: #655d5d;
+//  background: #ccc;
+//  color: #655d5d;
+//}
+
+

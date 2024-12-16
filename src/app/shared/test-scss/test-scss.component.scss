@@ -1,0 +1,88 @@
+$main-color: #521751;
+$colors: (main: #521751, secondary: #fa923f);
+$border-default: 0.05rem solid map-get($colors, main);
+$size-default: 1rem;
+$size-tiny: 0.2rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.section {
+  border: 0.1rem solid $main-color;
+  background-color: lighten($main-color, 72%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  width: 90vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.sass-introduction {
+  @extend .section;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.sass-details {
+  padding: 1rem;
+  @extend .section;
+}
+
+.section-header {
+  border-bottom: 0.1rem solid $main-color;
+
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.documentation-links {
+  list-style: none;
+  margin: $size-default 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    margin: $size-tiny 0;
+    background: white;
+  }
+
+  .documentation-link {
+    text-decoration: none;
+    color: map-get($colors, main);
+    display: block;
+    padding: $size-tiny;
+    border: $border-default;
+
+    &:hover, &:active {
+      color: white;
+      background: map-get($colors, secondary);
+      border-color: map-get($colors, secondary);
+    }
+  }
+
+}
+
+.char-highlight {
+  font-weight: bold;
+  color: $main-color;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  html {
+    font-size: 125%;
+  }
+
+  .sass-introduction,
+  .sass-details {
+    width: 30rem;
+  }
+}

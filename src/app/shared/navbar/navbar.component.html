@@ -1,0 +1,30 @@
+<header class="main-header">
+  <div>
+    <div>
+      <a class="main-header__brand" routerLink="/dashboard">
+        <img src="../../assets/images/Logo.png" alt="Your favorite brand"/>
+      </a>
+    </div>
+    <button class="toggle-button" (click)="openSideBar()">
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+    </button>
+  </div>
+  <div class="main-nav">
+    <div class="main-nav__items">
+      <div class="main-nav__item">
+        <a routerLink="/packages">Packages</a>
+      </div>
+      <div class="main-nav__item">
+        <a routerLink="/customers">Customers</a>
+      </div>
+      <div class="main-nav__item main-nav__item--cta">
+        <a routerLink="/login">Start Hosting</a>
+      </div>
+      <div class="main-nav__item main-nav__item--cta">
+        <a routerLink="/test">Test</a>
+      </div>
+    </div>
+  </div>
+</header>

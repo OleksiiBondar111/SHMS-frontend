@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  URL: \"http://shms-backend-lb-1597884372.eu-central-1.elb.amazonaws.com/api\",\n  mock: {\n    rest: {\n      patientListMock: null\n    }\n  }\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

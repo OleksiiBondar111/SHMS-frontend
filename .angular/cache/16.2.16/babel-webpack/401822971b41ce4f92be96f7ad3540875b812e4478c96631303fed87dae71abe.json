@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  URL: \"http://localhost:9090/api\",\n  mock: {\n    rest: {\n      patientListMock: null\n    }\n  }\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,47 @@
+[product-overview] {
+  background-image: url("../../assets/images/freedom.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 40vh;
+  position: relative;
+  //transition: transform 0.5s ease, opacity 0.5s ease;
+  animation: scaleUpDown 10s infinite;
+
+  //&:hover {
+  //  transform: scale(1.1);
+  //  opacity: 0.8;
+  //}
+}
+
+[product-overview] h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  font-size: 1.6rem;
+}
+
+//
+//@keyframes scaleUpDown {
+//  0% {
+//    transform: scale(1); /* Normal size */
+//  }
+//  50% {
+//    transform: scale(1.2); /* Enlarges at the midpoint */
+//  }
+//  100% {
+//    transform: scale(1); /* Returns to normal size */
+//  }
+//}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+
+  [product-overview] {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  [product-overview] h1 {
+    font-size: 3rem;
+  }
+}

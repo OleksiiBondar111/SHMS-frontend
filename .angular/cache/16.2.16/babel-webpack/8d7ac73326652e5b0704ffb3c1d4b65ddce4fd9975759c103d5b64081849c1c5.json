@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createFeatureSelector, createSelector } from \"@ngrx/store\";\nexport const selectAuthState = createFeatureSelector('auth');\nexport const selectToken = createSelector(selectAuthState, state => state.access_token);","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,101 @@
+h3 {
+  font-weight: bold;
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plan__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan {
+  background-color: #d5ffdc;
+  padding: 16px;
+  margin: 0.5rem 0;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.plan--highlighted {
+  background: #19b84c;
+  color: white;
+  //box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+  font-weight: bold;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__feature {
+  margin: 8px 0;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+@media (min-width: 55rem) {
+  .plan {
+    width: 30%;
+    margin: 0.5rem;
+    min-width: 15rem;
+    max-width: 25rem;
+  }
+
+  .plan__list {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
