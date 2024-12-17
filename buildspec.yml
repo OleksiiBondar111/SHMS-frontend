@@ -20,15 +20,15 @@ phases:
       - echo Build started on `date`
       - npm run build  # Run npm build
       - echo Building the Docker image...
-      - docker build -t shms-frontend .
-      - docker tag shms-frontend olexiybondar9685/shms-frontend
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest olexiybondar9685/$REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
       - echo Build completed on `date`
       - echo "Authenticating with Docker Hub..."
       - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
       - echo Pushing the Docker images...
-      - docker push olexiybondar9685/shms-frontend
+      - docker push olexiybondar9685/$REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
